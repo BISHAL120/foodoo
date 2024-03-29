@@ -7,7 +7,7 @@ import {
   View,
   useWindowDimensions,
 } from "react-native";
-const OnboardingSix = ({
+const Onboarding = ({
   id,
   image,
   tittle,
@@ -37,7 +37,7 @@ const OnboardingSix = ({
   );
 };
 
-export default OnboardingSix;
+export default Onboarding;
 
 const styles = StyleSheet.create({
   skipContainer: {
