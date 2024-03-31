@@ -21,19 +21,19 @@ const RegistrationScreen3 = () => {
       </View>
       <View style={styles.Input}>
         <View>
-          <Input name="Login" />
+          <Input type="Email" name="Login" />
         </View>
         <View style={styles.Password}>
-          <Input name="Password" icon={true} />
+          <Input type="Password" name="Password" icon={true} />
         </View>
         <View style={styles.Password}>
-          <Input name="Confirm Password" icon={true} />
+          <Input type="Password" name="Confirm Password" icon={true} />
         </View>
       </View>
       <View style={styles.Login2}>
         <ColorAuthBtn name={"Sign up"} />
       </View>
-      <View style={styles.Devider}>
+      <View style={styles.Divider}>
         <View style={styles.DividerLine}></View>
         <View>
           <Text>OR</Text>
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     textTransform: "capitalize",
     marginTop: 21,
   },
-  Devider: {
+  Divider: {
     width: "100%",
     flexDirection: "row",
     justifyContent: "center",

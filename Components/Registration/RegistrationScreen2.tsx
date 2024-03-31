@@ -20,18 +20,18 @@ const RegistrationScreen2 = () => {
         <Image source={require("../../assets/Group 34.png")} />
       </View>
       <View style={styles.Input}>
-        <View style={styles.Login}>
-          <Input name="Login" />
+        <View>
+          <Input type="Email" name="Login" />
         </View>
         <View style={styles.Password}>
-          <Input name="Password" icon={true} />
+          <Input type="Password" name="Password" icon={true} />
         </View>
         <Text style={styles.ForgotPass}>Forget Password?</Text>
       </View>
       <View style={styles.Login2}>
         <ColorAuthBtn name={"Login"} />
       </View>
-      <View style={styles.Devider}>
+      <View style={styles.Divider}>
         <View style={styles.DividerLine}></View>
         <View>
           <Text>OR</Text>
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   Container: {
     flex: 1,
     backgroundColor: "#fff",
-    marginTop: Platform.OS === "android" ? 40 : 0,
+    marginTop: 40,
     alignItems: "center",
   },
   Image: {},
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     textTransform: "capitalize",
     marginTop: 21,
   },
-  Devider: {
+  Divider: {
     width: "100%",
     flexDirection: "row",
     justifyContent: "center",

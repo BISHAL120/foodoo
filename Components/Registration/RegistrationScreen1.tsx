@@ -2,6 +2,7 @@ import {
   Image,
   Pressable,
   SafeAreaView,
+  StatusBar,
   StyleSheet,
   Text,
   View,
@@ -13,6 +14,7 @@ import TransAuthBtn from "../Shared/Trans-Auth-Button";
 const RegistrationScreen1 = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar barStyle={"dark-content"} backgroundColor="#fff" />
       <View style={styles.Image}>
         <Image source={require("../../assets/Group 7.png")} />
       </View>
@@ -51,7 +53,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   Image: {
-    marginTop: 10,
     alignItems: "center",
   },
   welcomeTextContainer: {

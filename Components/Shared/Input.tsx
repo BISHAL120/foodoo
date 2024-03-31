@@ -2,7 +2,15 @@ import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 import React, { useState } from "react";
 import { Feather } from "@expo/vector-icons";
 
-const Input = ({ name, icon = false }: { name: string; icon?: boolean }) => {
+const Input = ({
+  name,
+  icon = false,
+  type = "Password",
+}: {
+  name: string;
+  icon?: boolean;
+  type: "Email" | "Password";
+}) => {
   const [show, setShow] = useState(false);
   const handleClick = () => {
     setShow(!show);
@@ -13,7 +21,7 @@ const Input = ({ name, icon = false }: { name: string; icon?: boolean }) => {
         <TextInput
           style={styles.Input}
           placeholder={`${name}`}
-          keyboardType="email-address"
+          keyboardType={`${type === "Email" ? "email-address" : "default"}`}
         />
         {icon && (
           <TouchableOpacity style={styles.Icons} onPress={handleClick}>
