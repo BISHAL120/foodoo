@@ -15,19 +15,23 @@ const ForgotPassword3 = () => {
     <SafeAreaView style={styles.Container}>
       <StatusBar barStyle="dark-content" backgroundColor="#fff" />
       <View>
-        <View style={styles.HeaderContainer}>
-          <Text style={styles.HeaderText}>Reset your password</Text>
+        <View className="mt-44">
+          <Text className="ml-11 text-2xl font-semibold text-[#000] tracking-[0.5px]">
+            Reset your password
+          </Text>
         </View>
-        <View style={styles.ParagraphContainer}>
-          <Text style={styles.Paragraph}>Enter your password below</Text>
+        <View className="w-[240px] h-5 mt-4 pl-11">
+          <Text className="text-sm leading-5 text-[#000] tracking-[0.286px] font-normal">
+            Enter your password below
+          </Text>
         </View>
-        <View style={styles.Input}>
+        <View className="mt-[86px] w-full flex-row justify-center">
           <Input type="Password" name="Password" icon={true} />
         </View>
-        <View style={styles.Input2}>
+        <View className="mt-6 w-full flex-row justify-center">
           <Input type="Password" name="Confirm Password" icon={true} />
         </View>
-        <View style={styles.Submit}>
+        <View className="mt-[212px] flex-row h-14 w-full justify-center">
           <ColorAuthBtn name="Reset password" />
         </View>
       </View>
@@ -42,46 +46,46 @@ const styles = StyleSheet.create({
     flex: 1,
     color: "#fff",
   },
-  HeaderContainer: {
+  /*  HeaderContainer: {
     marginTop: 175,
-  },
-  HeaderText: {
+  }, */
+  /*  HeaderText: {
     marginLeft: 43,
     fontSize: 24,
     fontWeight: "600",
     color: "#000",
     letterSpacing: 0.5,
-  },
-  ParagraphContainer: {
+  }, */
+  /*   ParagraphContainer: {
     width: 240,
     height: 20,
     marginTop: 15,
     paddingLeft: 43,
-  },
-  Paragraph: {
+  }, */
+  /*  Paragraph: {
     fontSize: 13,
     lineHeight: 19.5,
     color: "#000",
     fontWeight: "400",
     letterSpacing: 0.286,
-  },
-  Input: {
+  }, */
+  /* Input: {
     marginTop: 84,
     width: "100%",
     flexDirection: "row",
     justifyContent: "center",
-  },
-  Input2: {
+  }, */
+  /*  Input2: {
     marginTop: 25,
     width: "100%",
     flexDirection: "row",
     justifyContent: "center",
-  },
-  Submit: {
+  }, */
+  /*   Submit: {
     marginTop: 212,
     height: 55,
     width: "100%",
     flexDirection: "row",
     justifyContent: "center",
-  },
+  }, */
 });
