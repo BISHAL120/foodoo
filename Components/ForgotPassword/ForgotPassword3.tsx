@@ -12,7 +12,7 @@ import ColorAuthBtn from "../Shared/Color-Auth-Btn";
 
 const ForgotPassword3 = () => {
   return (
-    <SafeAreaView style={styles.Container}>
+    <SafeAreaView className="flex bg-[#fff]">
       <StatusBar barStyle="dark-content" backgroundColor="#fff" />
       <View>
         <View className="mt-44">
@@ -42,10 +42,10 @@ const ForgotPassword3 = () => {
 export default ForgotPassword3;
 
 const styles = StyleSheet.create({
-  Container: {
+  /*  Container: {
     flex: 1,
     color: "#fff",
-  },
+  }, */
   /*  HeaderContainer: {
     marginTop: 175,
   }, */
