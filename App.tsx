@@ -8,5 +8,5 @@ import RegistrationScreen2 from "./Components/Registration/RegistrationScreen2";
 import RegistrationScreen3 from "./Components/Registration/RegistrationScreen3";
 
 export default function App() {
-  return <RegistrationScreen1 />;
+  return <Onboardings />;
 }
