@@ -16,15 +16,15 @@ const Input = ({
     setShow(!show);
   };
   return (
-    <View style={styles.InputContainer}>
-      <View style={styles.InputView}>
+    <View className="w-[345px] h-[55px]">
+      <View className="flex-row items-center">
         <TextInput
-          style={styles.Input}
+          className="flex-shrink-0 w-[342px] h-[55px] pl-[34px] py-[16px] bg-transparent border-black border rounded-[100px] text-[#B4B4B4] capitalize text-[15px] leading-[22.5px] font-normal tracking-[0.33]"
           placeholder={`${name}`}
           keyboardType={`${type === "Email" ? "email-address" : "default"}`}
         />
         {icon && (
-          <TouchableOpacity style={styles.Icons} onPress={handleClick}>
+          <TouchableOpacity className="right-10" onPress={handleClick}>
             {show ? (
               <Feather name="eye" size={16} color="#7D7D7D" />
             ) : (
@@ -40,16 +40,15 @@ const Input = ({
 export default Input;
 
 const styles = StyleSheet.create({
-  InputContainer: {
+  /*   InputContainer: {
     width: 345,
     height: 55,
-  },
-  InputView: {
+  }, */
+  /*   InputView: {
     flexDirection: "row",
     alignItems: "center",
-    // position: "relative",
-  },
-  Input: {
+  }, */
+  /*   Input: {
     flexShrink: 0,
     width: 342,
     height: 55,
@@ -65,9 +64,9 @@ const styles = StyleSheet.create({
     lineHeight: 22.5,
     fontWeight: "400",
     letterSpacing: 0.33,
-  },
-  Icons: {
+  }, */
+  /*   Icons: {
     // position: "absolute",
     right: 40,
-  },
+  }, */
 });

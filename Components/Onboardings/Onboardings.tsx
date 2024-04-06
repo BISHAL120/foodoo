@@ -5,7 +5,7 @@ import Onboarding from "./Onboarding";
 
 const Onboardings = () => {
   return (
-    <View style={styles.container}>
+    <View className="bg-white">
       <StatusBar barStyle="dark-content" backgroundColor="#fff" />
       <FlatList
         data={onboarding}
@@ -15,9 +15,14 @@ const Onboardings = () => {
         showsHorizontalScrollIndicator={false}
         pagingEnabled
       />
-      <View style={styles.dots}>
+      <View className="flex flex-row gap-[5px] mt-[50px] justify-center">
         {onboarding.map((_, i) => {
-          return <View style={styles.dot} key={i.toString()} />;
+          return (
+            <View
+              className="w-[10px] h-[10px] rounded-[10px] bg-[#FBDE3F]"
+              key={i.toString()}
+            />
+          );
         })}
       </View>
     </View>
@@ -27,19 +32,19 @@ const Onboardings = () => {
 export default Onboardings;
 
 const styles = StyleSheet.create({
-  container: {
+  /*   container: {
     backgroundColor: "#fff",
-  },
-  dots: {
+  }, */
+  /*   dots: {
     marginTop: 50,
     flexDirection: "row",
     gap: 5,
     justifyContent: "center",
-  },
-  dot: {
+  }, */
+  /*   dot: {
     width: 10,
     height: 10,
     borderRadius: 10,
     backgroundColor: "#FBDE3F",
-  },
+  }, */
 });

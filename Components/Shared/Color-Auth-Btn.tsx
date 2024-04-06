@@ -3,8 +3,10 @@ import React from "react";
 
 const ColorAuthBtn = ({ name }: { name: string }) => {
   return (
-    <View style={styles.btnContainer}>
-      <Text style={styles.Button}>{name}</Text>
+    <View className="max-w-[90%] w-[342px] bg-[#FBDE3F] rounded-[100px]">
+      <Text className="my-[14px] text-center text-[17px] leading-6 font-semibold text-black tracking-[0.374px]">
+        {name}
+      </Text>
     </View>
   );
 };
@@ -12,13 +14,13 @@ const ColorAuthBtn = ({ name }: { name: string }) => {
 export default ColorAuthBtn;
 
 const styles = StyleSheet.create({
-  btnContainer: {
+  /*   btnContainer: {
     maxWidth: "90%",
     width: 342,
     backgroundColor: "#FBDE3F",
     borderRadius: 100,
-  },
-  Button: {
+  }, */
+  /*   Button: {
     marginVertical: 14,
     textAlign: "center",
     fontSize: 17,
@@ -26,5 +28,5 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "#000000",
     letterSpacing: 0.374,
-  },
+  }, */
 });

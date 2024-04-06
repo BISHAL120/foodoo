@@ -5,26 +5,28 @@ import ColorAuthBtn from "../Shared/Color-Auth-Btn";
 
 const ForgotPassword1 = () => {
   return (
-    <SafeAreaView style={styles.Container}>
+    <SafeAreaView className="flex bg-[#fff]">
       <StatusBar barStyle="dark-content" backgroundColor="#fff" />
       <View>
-        <View style={styles.HeaderContainer}>
-          <Text style={styles.HeaderText}>Reset your password</Text>
+        <View className="mt-44">
+          <Text className="ml-[43px] text-2xl font-semibold text-black tracking-[0.5px]">
+            Reset your password
+          </Text>
         </View>
-        <View style={styles.ParagraphContainer}>
-          <Text style={styles.Paragraph}>
+        <View className="w-60 h-5 mt-[18px] pl-[43px]">
+          <Text className="text-[13px] leading-5 text-black tracking-[0.286px]">
             Enter your registered email below
           </Text>
         </View>
-        <View style={styles.Input}>
+        <View className="mt-20 w-full flex-row justify-center">
           <Input type="Email" name="Email" />
         </View>
-        <View style={styles.LoginContainer}>
-          <Text style={styles.LoginText}>
-            Remember the password? <Text style={styles.LoginLink}>Login</Text>
+        <View className="mt-[26px]">
+          <Text className="ml-[70px] text-xs leading-5 text-[#000] font-normal tracking-[0.286px]">
+            Remember the password? <Text className="font-semibold">Login</Text>
           </Text>
         </View>
-        <View style={styles.Submit}>
+        <View className="mt-[248px] h-14 w-full flex-row justify-center">
           <ColorAuthBtn name="Submit" />
         </View>
       </View>
@@ -35,58 +37,58 @@ const ForgotPassword1 = () => {
 export default ForgotPassword1;
 
 const styles = StyleSheet.create({
-  Container: {
+  /*   Container: {
     flex: 1,
     color: "#fff",
-  },
-  HeaderContainer: {
+  }, */
+  /*   HeaderContainer: {
     marginTop: 175,
-  },
-  HeaderText: {
+  }, */
+  /*   HeaderText: {
     marginLeft: 43,
     fontSize: 24,
     fontWeight: "600",
     color: "#000",
     letterSpacing: 0.5,
-  },
-  ParagraphContainer: {
+  }, */
+  /*   ParagraphContainer: {
     width: 240,
     height: 20,
     marginTop: 18,
     paddingLeft: 43,
-  },
-  Paragraph: {
+  }, */
+  /*   Paragraph: {
     fontSize: 13,
     lineHeight: 19.5,
     color: "#000",
     fontWeight: "400",
     letterSpacing: 0.286,
-  },
-  Input: {
+  }, */
+  /*   Input: {
     marginTop: 80,
     width: "100%",
     flexDirection: "row",
     justifyContent: "center",
-  },
-  LoginContainer: {
+  }, */
+  /*   LoginContainer: {
     marginTop: 26,
-  },
-  LoginText: {
+  }, */
+  /*   LoginText: {
     marginLeft: 70,
     fontSize: 13,
     lineHeight: 19.5,
     color: "#000",
     fontWeight: "400",
     letterSpacing: 0.286,
-  },
-  LoginLink: {
+  }, */
+  /*   LoginLink: {
     fontWeight: "600",
-  },
-  Submit: {
+  }, */
+/*   Submit: {
     marginTop: 248,
     height: 55,
     width: "100%",
     flexDirection: "row",
     justifyContent: "center",
-  },
+  }, */
 });

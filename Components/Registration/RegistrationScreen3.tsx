@@ -14,41 +14,44 @@ import ImageAuthBtn from "../Shared/SociaLogin";
 
 const RegistrationScreen3 = () => {
   return (
-    <SafeAreaView style={styles.Container}>
+    <SafeAreaView
+      className="flex bg-white items-center"
+      style={styles.Container}
+    >
       <StatusBar barStyle={"dark-content"} backgroundColor={"#fff"} />
       <View>
         <Image source={require("../../assets/Group 34.png")} />
       </View>
-      <View style={styles.Input}>
+      <View className="mt-[30px]">
         <View>
           <Input type="Email" name="Login" />
         </View>
-        <View style={styles.Password}>
+        <View className="mt-[21px]">
           <Input type="Password" name="Password" icon={true} />
         </View>
-        <View style={styles.Password}>
+        <View className="mt-[21px]">
           <Input type="Password" name="Confirm Password" icon={true} />
         </View>
       </View>
-      <View style={styles.Login2}>
+      <View className="mt-[21px]">
         <ColorAuthBtn name={"Sign up"} />
       </View>
-      <View style={styles.Divider}>
-        <View style={styles.DividerLine}></View>
+      <View className="w-full flex-row justify-center items-center gap-[17.5px] mt-[36px]">
+        <View className="w-[125px] mx-0 bg-black h-[1px]"></View>
         <View>
           <Text>OR</Text>
         </View>
-        <View style={styles.DividerLine}></View>
+        <View className="w-[125px] mx-0 bg-black h-[1px]"></View>
       </View>
-      <View style={styles.SocialLogin}>
+      <View className="mt-[33px]">
         <ImageAuthBtn type="Google" />
       </View>
-      <View style={styles.SocialLogin2}>
+      <View className="mt-[21px]">
         <ImageAuthBtn type="Facebook" />
       </View>
-      <View style={styles.Footer}>
-        <Text style={styles.FooterText}>
-          Already have an account? <Text style={styles.FooterLink}>Log in</Text>
+      <View className="mt-[73px]">
+        <Text className="w-[309px] text-center text-[13px] leading-5 text-black font-normal tracking-[0.286px]">
+          Already have an account? <Text className="font-semibold">Log in</Text>
         </Text>
       </View>
     </SafeAreaView>
@@ -59,57 +62,41 @@ export default RegistrationScreen3;
 
 const styles = StyleSheet.create({
   Container: {
-    flex: 1,
-    backgroundColor: "#fff",
     marginTop: Platform.OS === "android" ? 40 : 0,
-    alignItems: "center",
   },
-  Image: {},
-  Input: {
+  /*   Input: {
     marginTop: 30,
-  },
-  Login2: {
+  }, */
+  /*   Login2: {
     marginTop: 21,
-  },
-  Password: {
+  }, */
+  /*   Password: {
     marginTop: 21,
-  },
-  ForgotPass: {
-    width: "100%",
-    marginLeft: "auto",
-    marginRight: 16,
-    fontSize: 15,
-    lineHeight: 22.5,
-    letterSpacing: 0.33,
-    color: "#000000",
-    fontWeight: "400",
-    textTransform: "capitalize",
-    marginTop: 21,
-  },
-  Divider: {
+  }, */
+  /*   Divider: {
     width: "100%",
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
     gap: 17.5,
     marginTop: 36,
-  },
-  DividerLine: {
+  }, */
+  /*   DividerLine: {
     width: 125.5,
     marginVertical: 0,
     backgroundColor: "#000000",
     height: 1,
-  },
-  SocialLogin: {
+  }, */
+  /*   SocialLogin: {
     marginTop: 33,
-  },
-  SocialLogin2: {
+  }, */
+  /*   SocialLogin2: {
     marginTop: 21,
-  },
-  Footer: {
+  }, */
+  /*   Footer: {
     marginTop: 73,
-  },
-  FooterText: {
+  }, */
+  /*   FooterText: {
     width: 309,
     textAlign: "center",
     fontSize: 13,
@@ -117,8 +104,8 @@ const styles = StyleSheet.create({
     color: "#000",
     fontWeight: "400",
     letterSpacing: 0.286,
-  },
-  FooterLink: {
+  }, */
+  /*  FooterLink: {
     fontWeight: "600",
-  },
+  }, */
 });
